@@ -1,0 +1,1081 @@
+Delivered-To: dinoham223@gmail.com
+Received: by 10.2.119.137 with SMTP id g131csp2655006jac;
+        Mon, 30 Oct 2017 10:17:26 -0700 (PDT)
+X-Google-Smtp-Source: ABhQp+TL//WD3gGasfeqmMw6dwyVwRQhXMuvtEsT9gvgEYBC7iJJuic5ltqpSJ3NFydUySPvVf9i
+X-Received: by 10.55.158.5 with SMTP id h5mr14234185qke.209.1509383846151;
+        Mon, 30 Oct 2017 10:17:26 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1509383846; cv=none;
+        d=google.com; s=arc-20160816;
+        b=LxXH7VASMTncpv7ClQgaP2sCXZgzMfU3SOCFx0N8MjM9o02MmrD+50nLSrJhuLd3VA
+         Fqpn7w3SKs0nSkHfBk2DE3YMSaoju32JpizXQHEW+TLt+A0II4Uw0x4dszdAA1+v1QnP
+         RJ3ZSZk0iGq6g8pxWd3E0M9mZo524S/BA5YX82LPD/8dvWPno2bQS49vGu39KxprRH2T
+         2X0omt1AExZfJpAgPJcTtwdraoIsnv5m2vJ7Eu9aTlC0Rb2cvP8xlojfcg01zI/wGbkB
+         vAlt/l6ALq1kEs9RRqa1qp6wEDGCOGzcK6VSGQAaNXtStmUV6YYBOIOy0qWgnYTsJG/n
+         hcdA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=message-id:to:subject:mime-version:from:date:dkim-signature
+         :arc-authentication-results;
+        bh=cPEik4o1bGR0u9TES8jlt3ofH7hpv/hVHbT7wwDN5TU=;
+        b=bmmMRRODG4sUTwqFMHeY6CcnlZfZYXcb2YDpnuez2+stRijFHZ1tH/Ch0QYqqbke4L
+         EuLtSnCDxFFxz3o8xLRVQpEixApwxOTmz2qZFnsULCoDf5GYk1X8M3jd2rQwH1jo3ZpT
+         AVBygSBGnhVXf+hX1GufLvC95ydV8glNgq7jn4zFb2cePgcDNjTH/aqUpENwA6+dtO0v
+         R2se8xCOVl4IqbSrVW93O8J7eD+wS1eO0Ugpu+xeaV6L9qZ9caLhKAhmIqctqNQ2sYUM
+         ffU8brnF05X7V+PmKUZXqcBtBOXKgKtblJeYQ/kZbxDZwMIsP/PKkH/mAkINtZYo/odw
+         p0iQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@sendgrid.net header.s=smtpapi header.b=wyrS0aBn;
+       spf=pass (google.com: domain of bounces+6186184-7d55-dinoham223=gmail.com@sendgrid.net designates 167.89.106.65 as permitted sender) smtp.mailfrom=bounces+6186184-7d55-dinoham223=gmail.com@sendgrid.net
+Return-Path: <bounces+6186184-7d55-dinoham223=gmail.com@sendgrid.net>
+Received: from o2.20qt.s2shared.sendgrid.net (o2.20qt.s2shared.sendgrid.net. [167.89.106.65])
+        by mx.google.com with ESMTPS id u1si1860890qte.245.2017.10.30.10.17.25
+        for <dinoham223@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 30 Oct 2017 10:17:26 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounces+6186184-7d55-dinoham223=gmail.com@sendgrid.net designates 167.89.106.65 as permitted sender) client-ip=167.89.106.65;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@sendgrid.net header.s=smtpapi header.b=wyrS0aBn;
+       spf=pass (google.com: domain of bounces+6186184-7d55-dinoham223=gmail.com@sendgrid.net designates 167.89.106.65 as permitted sender) smtp.mailfrom=bounces+6186184-7d55-dinoham223=gmail.com@sendgrid.net
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=sendgrid.net; 
+	h=from:mime-version:subject:to:content-type:x-feedback-id; 
+	s=smtpapi; bh=FTRIRD0vvA0seBiz5fKOcSoJFFM=; b=wyrS0aBnJf/TQTQIvL
+	WkPwmk7jpdyZT1l3oYdIxB7GS/dX+ZLchDWpoRTtrYqMTK0kd3gYTYn69P7G3pEu
+	rkEnz8sdPETSosiYpIYFjY+tobNto9nrOPnn2U38RZDHGZLI0OLORssJYMx7lZOc
+	nka/foDBBQ3MJSqyZrx/mI3rA=
+Received: by filter0013p3iad2.sendgrid.net with SMTP id filter0013p3iad2-30620-59F75EA5-11
+        2017-10-30 17:17:25.374873794 +0000 UTC
+Received: from NjE4NjE4NA (p50837D6B.dip0.t-ipconnect.de [80.131.125.107])
+	by ismtpd0005p1lon1.sendgrid.net (SG) with HTTP id XAPXVQzEStOUUVI8AKY4wg
+	for <dinoham223@gmail.com>; Mon, 30 Oct 2017 17:17:24.917 +0000 (UTC)
+Date: Mon, 30 Oct 2017 17:17:25 +0000 (UTC)
+From: info@domain.com
+Mime-Version: 1.0
+Subject: IAT_V-1.2
+To: dinoham223@gmail.com
+Message-ID: <XAPXVQzEStOUUVI8AKY4wg@ismtpd0005p1lon1.sendgrid.net>
+Content-type: multipart/alternative; boundary="----------=_1509383845-8364-1834"
+X-SG-EID: BnIEY/1zVhxZuuBx00ZOjRM2ag321Gf8EDLorc4I1YyYc7m/AIRtVnezlgg50HvRsSkiyfPna7hOgp
+ U9I61nYY3hIqCEXyYElCS45755vcIcofpHwWigRK78sJKaoEpu1Wp6kxYpzMrvO7MiIpIuJaK6rQng
+ jIkB33zWXWiZR8IxxoapuODae7FqOchv5lmG
+X-Feedback-ID: 6186184:dxWZNC4GMCaosgKhjJnFV6ET/PdOP8ARtTmTNKSj0Mo=:dxWZNC4GMCaosgKhjJnFV6ET/PdOP8ARtTmTNKSj0Mo=:SG
+
+This is a multi-part message in MIME format...
+
+------------=_1509383845-8364-1834
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=UTF-8
+
+NEW TEST
+    TEST_ID: 0
+    DATE: Mon Oct 30 18:09:23 GMT+01:00 2017
+int playtimes =3D 1
+
+NEW STATE: showClip
+    time needed for state: 9.765625E-4
+STATE END
+
+NEW STATE: iat0.5
+    time needed for state: 30.892578
+STATE END
+
+NEW STATE: iat1.0
+ArrayMap<Float, Float> map1.0=3D new ArrayMap(40);      map1.put(1.0, -8.55=
+01495E12);//    0   |  answer_correct: true   |  time_needed: -8.5501495E12
+      map1.put(1.0, -8.5529733E12);//    1   |  answer_correct: true   |  t=
+ime_needed: -8.5529733E12
+      map1.put(1.0, -8.5549111E12);//    2   |  answer_correct: true   |  t=
+ime_needed: -8.5549111E12
+      map1.put(1.0, -8.557456E12);//    3   |  answer_correct: true   |  ti=
+me_needed: -8.557456E12
+      map1.put(1.0, -8.5588092E12);//    4   |  answer_correct: true   |  t=
+ime_needed: -8.5588092E12
+      map1.put(1.0, -8.5601498E12);//    5   |  answer_correct: true   |  t=
+ime_needed: -8.5601498E12
+      map1.put(1.0, -8.5632478E12);//    6   |  answer_correct: true   |  t=
+ime_needed: -8.5632478E12
+      map1.put(1.0, -8.5644904E12);//    7   |  answer_correct: true   |  t=
+ime_needed: -8.5644904E12
+      map1.put(1.0, -8.5659426E12);//    8   |  answer_correct: true   |  t=
+ime_needed: -8.5659426E12
+      map1.put(1.0, -8.5671511E12);//    9  |  answer_correct: true   |  ti=
+me_needed: -8.5671511E12
+      map1.put(1.0, -8.5697946E12);//    10  |  answer_correct: true   |  t=
+ime_needed: -8.5697946E12
+      map1.put(1.0, -8.5709674E12);//    11  |  answer_correct: true   |  t=
+ime_needed: -8.5709674E12
+      map1.put(1.0, -8.5733183E12);//    12  |  answer_correct: true   |  t=
+ime_needed: -8.5733183E12
+      map1.put(1.0, -8.5750705E12);//    13  |  answer_correct: true   |  t=
+ime_needed: -8.5750705E12
+      map1.put(1.0, -8.5758454E12);//    14  |  answer_correct: true   |  t=
+ime_needed: -8.5758454E12
+      map1.put(1.0, -8.5772526E12);//    15  |  answer_correct: true   |  t=
+ime_needed: -8.5772526E12
+      map1.put(1.0, -8.5796748E12);//    16  |  answer_correct: true   |  t=
+ime_needed: -8.5796748E12
+      map1.put(1.0, -8.5808371E12);//    17  |  answer_correct: true   |  t=
+ime_needed: -8.5808371E12
+      map1.put(1.0, -8.5821531E12);//    18  |  answer_correct: true   |  t=
+ime_needed: -8.5821531E12
+      map1.put(1.0, -8.5836138E12);//    19  |  answer_correct: true   |  t=
+ime_needed: -8.5836138E12
+      map1.put(1.0, -8.5846713E12);//    20  |  answer_correct: true   |  t=
+ime_needed: -8.5846713E12
+    time needed for state: 36.591797
+STATE END
+
+NEW STATE: iat1.5
+    time needed for state: 6.5029297
+STATE END
+
+NEW STATE: iat2.0
+ArrayMap<Float, Float> map2.0=3D new ArrayMap(40);      map2.put(1.0, -8.59=
+3278E12);//    0   |  answer_correct: true   |  time_needed: -8.593278E12
+      map2.put(1.0, -8.5960211E12);//    1   |  answer_correct: true   |  t=
+ime_needed: -8.5960211E12
+      map2.put(1.0, -8.597897E12);//    2   |  answer_correct: true   |  ti=
+me_needed: -8.597897E12
+      map2.put(1.0, -8.5990074E12);//    3   |  answer_correct: true   |  t=
+ime_needed: -8.5990074E12
+      map2.put(1.0, -8.599906E12);//    4   |  answer_correct: true   |  ti=
+me_needed: -8.599906E12
+      map2.put(1.0, -8.6009944E12);//    5   |  answer_correct: true   |  t=
+ime_needed: -8.6009944E12
+      map2.put(1.0, -8.6021526E12);//    6   |  answer_correct: true   |  t=
+ime_needed: -8.6021526E12
+      map2.put(1.0, -8.6035058E12);//    7   |  answer_correct: true   |  t=
+ime_needed: -8.6035058E12
+      map2.put(1.0, -8.6047006E12);//    8   |  answer_correct: true   |  t=
+ime_needed: -8.6047006E12
+      map2.put(1.0, -8.6061723E12);//    9  |  answer_correct: true   |  ti=
+me_needed: -8.6061723E12
+      map2.put(1.0, -8.6073263E12);//    10  |  answer_correct: true   |  t=
+ime_needed: -8.6073263E12
+      map2.put(1.0, -8.6085646E12);//    11  |  answer_correct: true   |  t=
+ime_needed: -8.6085646E12
+      map2.put(1.0, -8.6094696E12);//    12  |  answer_correct: true   |  t=
+ime_needed: -8.6094696E12
+      map2.put(0.0, 2.32469299E9);//    13  |  answer_correct: false  |  ti=
+me_needed: 2.32469299E9
+      map2.put(1.0, -2097152.0);//    14  |  answer_correct: true   |  time=
+_needed: -2097152.0
+      map2.put(1.0, -4.4926239E9);//    15  |  answer_correct: true   |  ti=
+me_needed: -4.4926239E9
+      map2.put(1.0, -5.5490642E9);//    16  |  answer_correct: true   |  ti=
+me_needed: -5.5490642E9
+      map2.put(1.0, -6.4833454E9);//    17  |  answer_correct: true   |  ti=
+me_needed: -6.4833454E9
+      map2.put(1.0, -7.3447506E9);//    18  |  answer_correct: true   |  ti=
+me_needed: -7.3447506E9
+      map2.put(1.0, -8.1552998E9);//    19  |  answer_correct: true   |  ti=
+me_needed: -8.1552998E9
+      map2.put(1.0, -8.9936364E9);//    20  |  answer_correct: true   |  ti=
+me_needed: -8.9936364E9
+    time needed for state: 29.336914
+STATE END
+
+NEW STATE: iat2.5
+    time needed for state: 6.790039
+STATE END
+
+NEW STATE: iat3.0
+ArrayMap<Float, Float> map3.0=3D new ArrayMap(40);      map3.put(1.0, -1.66=
+650184E10);//    0   |  answer_correct: true   |  time_needed: -1.66650184E=
+10
+      map3.put(1.0, -2.09694228E10);//    1   |  answer_correct: true   |  =
+time_needed: -2.09694228E10
+      map3.put(0.0, 4.6368031E9);//    2   |  answer_correct: false  |  tim=
+e_needed: 4.6368031E9
+      map3.put(1.0, -2097152.0);//    3   |  answer_correct: true   |  time=
+_needed: -2097152.0
+      map3.put(1.0, -5.4908682E9);//    4   |  answer_correct: true   |  ti=
+me_needed: -5.4908682E9
+      map3.put(1.0, -6.7617423E9);//    5   |  answer_correct: true   |  ti=
+me_needed: -6.7617423E9
+      map3.put(1.0, -7.9350989E9);//    6   |  answer_correct: true   |  ti=
+me_needed: -7.9350989E9
+      map3.put(1.0, -9.0098893E9);//    7   |  answer_correct: true   |  ti=
+me_needed: -9.0098893E9
+      map3.put(1.0, -1.00322509E10);//    8   |  answer_correct: true   |  =
+time_needed: -1.00322509E10
+      map3.put(1.0, -1.09570949E10);//    9  |  answer_correct: true   |  t=
+ime_needed: -1.09570949E10
+      map3.put(1.0, -1.18709289E10);//    10  |  answer_correct: true   |  =
+time_needed: -1.18709289E10
+      map3.put(1.0, -1.28455803E10);//    11  |  answer_correct: true   |  =
+time_needed: -1.28455803E10
+      map3.put(1.0, -1.37877258E10);//    12  |  answer_correct: true   |  =
+time_needed: -1.37877258E10
+      map3.put(1.0, -1.49862482E10);//    13  |  answer_correct: true   |  =
+time_needed: -1.49862482E10
+      map3.put(1.0, -1.63588342E10);//    14  |  answer_correct: true   |  =
+time_needed: -1.63588342E10
+      map3.put(1.0, -1.72128993E10);//    15  |  answer_correct: true   |  =
+time_needed: -1.72128993E10
+      map3.put(0.0, 4.3133174E9);//    16  |  answer_correct: false  |  tim=
+e_needed: 4.3133174E9
+      map3.put(1.0, -2097152.0);//    17  |  answer_correct: true   |  time=
+_needed: -2097152.0
+      map3.put(1.0, -2.97009152E9);//    18  |  answer_correct: true   |  t=
+ime_needed: -2.97009152E9
+      map3.put(1.0, -4.6661632E9);//    19  |  answer_correct: true   |  ti=
+me_needed: -4.6661632E9
+      map3.put(1.0, -5.6617861E9);//    20  |  answer_correct: true   |  ti=
+me_needed: -5.6617861E9
+    time needed for state: 40.59961
+STATE END
+
+NEW STATE: iat3.5
+    time needed for state: 1.8085938
+STATE END
+
+NEW STATE: iat4.0
+ArrayMap<Float, Float> map4.0=3D new ArrayMap(40);      map4.put(0.0, 7.431=
+7824E9);//    0   |  answer_correct: false  |  time_needed: 7.4317824E9
+      map4.put(1.0, -2097152.0);//    1   |  answer_correct: true   |  time=
+_needed: -2097152.0
+      map4.put(1.0, -1.10886912E9);//    2   |  answer_correct: true   |  t=
+ime_needed: -1.10886912E9
+      map4.put(1.0, -2.26020557E9);//    3   |  answer_correct: true   |  t=
+ime_needed: -2.26020557E9
+      map4.put(1.0, -3.2678871E9);//    4   |  answer_correct: true   |  ti=
+me_needed: -3.2678871E9
+      map4.put(1.0, -4.3447747E9);//    5   |  answer_correct: true   |  ti=
+me_needed: -4.3447747E9
+      map4.put(1.0, -7.6394004E9);//    6   |  answer_correct: true   |  ti=
+me_needed: -7.6394004E9
+      map4.put(1.0, -1.32639621E10);//    7   |  answer_correct: true   |  =
+time_needed: -1.32639621E10
+      map4.put(1.0, -1.42648279E10);//    8   |  answer_correct: true   |  =
+time_needed: -1.42648279E10
+      map4.put(1.0, -1.51220388E10);//    9  |  answer_correct: true   |  t=
+ime_needed: -1.51220388E10
+      map4.put(1.0, -1.65245092E10);//    10  |  answer_correct: true   |  =
+time_needed: -1.65245092E10
+      map4.put(1.0, -1.76134554E10);//    11  |  answer_correct: true   |  =
+time_needed: -1.76134554E10
+      map4.put(1.0, -1.88235121E10);//    12  |  answer_correct: true   |  =
+time_needed: -1.88235121E10
+      map4.put(1.0, -1.99460127E10);//    13  |  answer_correct: true   |  =
+time_needed: -1.99460127E10
+      map4.put(1.0, -2.18350223E10);//    14  |  answer_correct: true   |  =
+time_needed: -2.18350223E10
+      map4.put(1.0, -2.58762342E10);//    15  |  answer_correct: true   |  =
+time_needed: -2.58762342E10
+      map4.put(1.0, -2.77274952E10);//    16  |  answer_correct: true   |  =
+time_needed: -2.77274952E10
+      map4.put(1.0, -2.94351012E10);//    17  |  answer_correct: true   |  =
+time_needed: -2.94351012E10
+      map4.put(1.0, -3.04606085E10);//    18  |  answer_correct: true   |  =
+time_needed: -3.04606085E10
+      map4.put(1.0, -3.1295275E10);//    19  |  answer_correct: true   |  t=
+ime_needed: -3.1295275E10
+      map4.put(1.0, -3.24046684E10);//    20  |  answer_correct: true   |  =
+time_needed: -3.24046684E10
+      map4.put(1.0, -3.34569144E10);//    21  |  answer_correct: true   |  =
+time_needed: -3.34569144E10
+      map4.put(1.0, -3.4895036E10);//    22  |  answer_correct: true   |  t=
+ime_needed: -3.4895036E10
+      map4.put(1.0, -3.607416E10);//    23  |  answer_correct: true   |  ti=
+me_needed: -3.607416E10
+      map4.put(1.0, -3.9369834E10);//    24  |  answer_correct: true   |  t=
+ime_needed: -3.9369834E10
+      map4.put(1.0, -4.0640709E10);//    25  |  answer_correct: true   |  t=
+ime_needed: -4.0640709E10
+      map4.put(1.0, -4.1732801E10);//    26  |  answer_correct: true   |  t=
+ime_needed: -4.1732801E10
+      map4.put(1.0, -4.4166545E10);//    27  |  answer_correct: true   |  t=
+ime_needed: -4.4166545E10
+      map4.put(1.0, -4.6867677E10);//    28  |  answer_correct: true   |  t=
+ime_needed: -4.6867677E10
+      map4.put(1.0, -4.7880077E10);//    29  |  answer_correct: true   |  t=
+ime_needed: -4.7880077E10
+      map4.put(1.0, -4.8801251E10);//    30  |  answer_correct: true   |  t=
+ime_needed: -4.8801251E10
+      map4.put(1.0, -4.9949442E10);//    31  |  answer_correct: true   |  t=
+ime_needed: -4.9949442E10
+      map4.put(1.0, -5.0905219E10);//    32  |  answer_correct: true   |  t=
+ime_needed: -5.0905219E10
+      map4.put(1.0, -5.2026147E10);//    33  |  answer_correct: true   |  t=
+ime_needed: -5.2026147E10
+      map4.put(1.0, -5.5173448E10);//    34  |  answer_correct: true   |  t=
+ime_needed: -5.5173448E10
+      map4.put(0.0, 2.74726912E9);//    35  |  answer_correct: false  |  ti=
+me_needed: 2.74726912E9
+      map4.put(1.0, -1572864.0);//    36  |  answer_correct: true   |  time=
+_needed: -1572864.0
+      map4.put(1.0, -5.7524879E9);//    37  |  answer_correct: true   |  ti=
+me_needed: -5.7524879E9
+      map4.put(0.0, 1.52200806E9);//    38  |  answer_correct: false  |  ti=
+me_needed: 1.52200806E9
+      map4.put(1.0, -2097152.0);//    39  |  answer_correct: true   |  time=
+_needed: -2097152.0
+      map4.put(1.0, -1.27611699E9);//    40  |  answer_correct: true   |  t=
+ime_needed: -1.27611699E9
+    time needed for state: 76.81055
+STATE END
+
+NEW STATE: iat4.5
+    time needed for state: 1.5800781
+STATE END
+
+NEW STATE: iat5.0
+ArrayMap<Float, Float> map5.0=3D new ArrayMap(40);      map5.put(0.0, 6.617=
+5631E9);//    0   |  answer_correct: false  |  time_needed: 6.6175631E9
+      map5.put(1.0, -2621440.0);//    1   |  answer_correct: true   |  time=
+_needed: -2621440.0
+      map5.put(1.0, -2.0274217E9);//    2   |  answer_correct: true   |  ti=
+me_needed: -2.0274217E9
+      map5.put(1.0, -3.12213504E9);//    3   |  answer_correct: true   |  t=
+ime_needed: -3.12213504E9
+      map5.put(1.0, -4.13663232E9);//    4   |  answer_correct: true   |  t=
+ime_needed: -4.13663232E9
+      map5.put(1.0, -5.0903122E9);//    5   |  answer_correct: true   |  ti=
+me_needed: -5.0903122E9
+      map5.put(0.0, 2.56796262E9);//    6   |  answer_correct: false  |  ti=
+me_needed: 2.56796262E9
+      map5.put(1.0, -2097152.0);//    7   |  answer_correct: true   |  time=
+_needed: -2097152.0
+      map5.put(1.0, -6.3753421E8);//    8   |  answer_correct: true   |  ti=
+me_needed: -6.3753421E8
+      map5.put(1.0, -1.39041178E9);//    9  |  answer_correct: true   |  ti=
+me_needed: -1.39041178E9
+      map5.put(1.0, -3.7224448E9);//    10  |  answer_correct: true   |  ti=
+me_needed: -3.7224448E9
+      map5.put(0.0, 1.7521705E9);//    11  |  answer_correct: false  |  tim=
+e_needed: 1.7521705E9
+      map5.put(1.0, -1572864.0);//    12  |  answer_correct: true   |  time=
+_needed: -1572864.0
+      map5.put(1.0, -4.3070259E9);//    13  |  answer_correct: true   |  ti=
+me_needed: -4.3070259E9
+      map5.put(1.0, -5.6140759E9);//    14  |  answer_correct: true   |  ti=
+me_needed: -5.6140759E9
+      map5.put(1.0, -7.2283587E9);//    15  |  answer_correct: true   |  ti=
+me_needed: -7.2283587E9
+      map5.put(1.0, -8.257536E9);//    16  |  answer_correct: true   |  tim=
+e_needed: -8.257536E9
+      map5.put(1.0, -9.4812242E9);//    17  |  answer_correct: true   |  ti=
+me_needed: -9.4812242E9
+      map5.put(0.0, 1.51728947E9);//    18  |  answer_correct: false  |  ti=
+me_needed: 1.51728947E9
+      map5.put(1.0, -2621440.0);//    19  |  answer_correct: true   |  time=
+_needed: -2621440.0
+      map5.put(1.0, -2.49823232E9);//    20  |  answer_correct: true   |  t=
+ime_needed: -2.49823232E9
+      map5.put(1.0, -5.6533975E9);//    21  |  answer_correct: true   |  ti=
+me_needed: -5.6533975E9
+      map5.put(1.0, -7.4538025E9);//    22  |  answer_correct: true   |  ti=
+me_needed: -7.4538025E9
+      map5.put(1.0, -8.9281004E9);//    23  |  answer_correct: true   |  ti=
+me_needed: -8.9281004E9
+      map5.put(1.0, -1.07363697E10);//    24  |  answer_correct: true   |  =
+time_needed: -1.07363697E10
+      map5.put(1.0, -1.20785469E10);//    25  |  answer_correct: true   |  =
+time_needed: -1.20785469E10
+      map5.put(1.0, -1.31470459E10);//    26  |  answer_correct: true   |  =
+time_needed: -1.31470459E10
+      map5.put(1.0, -1.44032399E10);//    27  |  answer_correct: true   |  =
+time_needed: -1.44032399E10
+      map5.put(1.0, -1.55776451E10);//    28  |  answer_correct: true   |  =
+time_needed: -1.55776451E10
+      map5.put(1.0, -1.77345659E10);//    29  |  answer_correct: true   |  =
+time_needed: -1.77345659E10
+      map5.put(1.0, -1.90620631E10);//    30  |  answer_correct: true   |  =
+time_needed: -1.90620631E10
+      map5.put(1.0, -1.99145554E10);//    31  |  answer_correct: true   |  =
+time_needed: -1.99145554E10
+      map5.put(1.0, -2.11004948E10);//    32  |  answer_correct: true   |  =
+time_needed: -2.11004948E10
+      map5.put(1.0, -2.33129902E10);//    33  |  answer_correct: true   |  =
+time_needed: -2.33129902E10
+      map5.put(1.0, -2.48680284E10);//    34  |  answer_correct: true   |  =
+time_needed: -2.48680284E10
+      map5.put(1.0, -2.65499443E10);//    35  |  answer_correct: true   |  =
+time_needed: -2.65499443E10
+      map5.put(1.0, -2.73992909E10);//    36  |  answer_correct: true   |  =
+time_needed: -2.73992909E10
+      map5.put(1.0, -2.89438433E10);//    37  |  answer_correct: true   |  =
+time_needed: -2.89438433E10
+      map5.put(1.0, -3.03111864E10);//    38  |  answer_correct: true   |  =
+time_needed: -3.03111864E10
+      map5.put(1.0, -3.15013202E10);//    39  |  answer_correct: true   |  =
+time_needed: -3.15013202E10
+      map5.put(1.0, -3.25488476E10);//    40  |  answer_correct: true   |  =
+time_needed: -3.25488476E10
+    time needed for state: 67.46777
+STATE END
+
+NEW STATE: iat5.5
+    time needed for state: 1.3320312
+STATE END
+
+NEW STATE: iat6.0
+ArrayMap<Float, Float> map6.0=3D new ArrayMap(40);      map6.put(1.0, -3.46=
+33417E10);//    0   |  answer_correct: true   |  time_needed: -3.4633417E10
+      map6.put(1.0, -4.220833E10);//    1   |  answer_correct: true   |  ti=
+me_needed: -4.220833E10
+      map6.put(1.0, -4.6156218E10);//    2   |  answer_correct: true   |  t=
+ime_needed: -4.6156218E10
+      map6.put(1.0, -5.2620689E10);//    3   |  answer_correct: true   |  t=
+ime_needed: -5.2620689E10
+      map6.put(1.0, -5.3660877E10);//    4   |  answer_correct: true   |  t=
+ime_needed: -5.3660877E10
+      map6.put(1.0, -5.9082015E10);//    5   |  answer_correct: true   |  t=
+ime_needed: -5.9082015E10
+      map6.put(1.0, -6.0709405E10);//    6   |  answer_correct: true   |  t=
+ime_needed: -6.0709405E10
+      map6.put(1.0, -6.1680386E10);//    7   |  answer_correct: true   |  t=
+ime_needed: -6.1680386E10
+      map6.put(1.0, -6.5210941E10);//    8   |  answer_correct: true   |  t=
+ime_needed: -6.5210941E10
+      map6.put(1.0, -6.6653782E10);//    9  |  answer_correct: true   |  ti=
+me_needed: -6.6653782E10
+      map6.put(1.0, -6.773801E10);//    10  |  answer_correct: true   |  ti=
+me_needed: -6.773801E10
+      map6.put(1.0, -6.9471306E10);//    11  |  answer_correct: true   |  t=
+ime_needed: -6.9471306E10
+      map6.put(1.0, -7.0925681E10);//    12  |  answer_correct: true   |  t=
+ime_needed: -7.0925681E10
+      map6.put(1.0, -7.2150417E10);//    13  |  answer_correct: true   |  t=
+ime_needed: -7.2150417E10
+      map6.put(1.0, -7.39676E10);//    14  |  answer_correct: true   |  tim=
+e_needed: -7.39676E10
+      map6.put(1.0, -7.5500618E10);//    15  |  answer_correct: true   |  t=
+ime_needed: -7.5500618E10
+      map6.put(1.0, -7.6551291E10);//    16  |  answer_correct: true   |  t=
+ime_needed: -7.6551291E10
+      map6.put(1.0, -7.7523321E10);//    17  |  answer_correct: true   |  t=
+ime_needed: -7.7523321E10
+      map6.put(1.0, -7.8360084E10);//    18  |  answer_correct: true   |  t=
+ime_needed: -7.8360084E10
+      map6.put(1.0, -7.9334212E10);//    19  |  answer_correct: true   |  t=
+ime_needed: -7.9334212E10
+      map6.put(1.0, -8.024857E10);//    20  |  answer_correct: true   |  ti=
+me_needed: -8.024857E10
+    time needed for state: 46.479492
+STATE END
+
+NEW STATE: iat6.5
+    time needed for state: 1.0615234
+STATE END
+
+NEW STATE: iat7.0
+ArrayMap<Float, Float> map7.0=3D new ArrayMap(40);      map7.put(1.0, -8.22=
+06261E10);//    0   |  answer_correct: true   |  time_needed: -8.2206261E10
+      map7.put(1.0, -8.6546317E10);//    1   |  answer_correct: true   |  t=
+ime_needed: -8.6546317E10
+      map7.put(1.0, -9.0769981E10);//    2   |  answer_correct: true   |  t=
+ime_needed: -9.0769981E10
+      map7.put(1.0, -9.2774859E10);//    3   |  answer_correct: true   |  t=
+ime_needed: -9.2774859E10
+      map7.put(0.0, 3.56410982E9);//    4   |  answer_correct: false  |  ti=
+me_needed: 3.56410982E9
+      map7.put(1.0, -2097152.0);//    5   |  answer_correct: true   |  time=
+_needed: -2097152.0
+      map7.put(1.0, -5.4599352E9);//    6   |  answer_correct: true   |  ti=
+me_needed: -5.4599352E9
+      map7.put(1.0, -6.608126E9);//    7   |  answer_correct: true   |  tim=
+e_needed: -6.608126E9
+      map7.put(0.0, 2.02899456E9);//    8   |  answer_correct: false  |  ti=
+me_needed: 2.02899456E9
+      map7.put(1.0, -2097152.0);//    9  |  answer_correct: true   |  time_=
+needed: -2097152.0
+      map7.put(1.0, -5.0038047E9);//    10  |  answer_correct: true   |  ti=
+me_needed: -5.0038047E9
+      map7.put(1.0, -6.6144174E9);//    11  |  answer_correct: true   |  ti=
+me_needed: -6.6144174E9
+      map7.put(1.0, -9.3344236E9);//    12  |  answer_correct: true   |  ti=
+me_needed: -9.3344236E9
+      map7.put(1.0, -1.2506366E10);//    13  |  answer_correct: true   |  t=
+ime_needed: -1.2506366E10
+      map7.put(1.0, -1.44472801E10);//    14  |  answer_correct: true   |  =
+time_needed: -1.44472801E10
+      map7.put(1.0, -1.54193101E10);//    15  |  answer_correct: true   |  =
+time_needed: -1.54193101E10
+      map7.put(1.0, -1.68936079E10);//    16  |  answer_correct: true   |  =
+time_needed: -1.68936079E10
+      map7.put(1.0, -1.81990851E10);//    17  |  answer_correct: true   |  =
+time_needed: -1.81990851E10
+      map7.put(1.0, -1.96912087E10);//    18  |  answer_correct: true   |  =
+time_needed: -1.96912087E10
+      map7.put(1.0, -2.08446423E10);//    19  |  answer_correct: true   |  =
+time_needed: -2.08446423E10
+      map7.put(1.0, -2.18691011E10);//    20  |  answer_correct: true   |  =
+time_needed: -2.18691011E10
+      map7.put(1.0, -2.27079619E10);//    21  |  answer_correct: true   |  =
+time_needed: -2.27079619E10
+      map7.put(1.0, -2.44098007E10);//    22  |  answer_correct: true   |  =
+time_needed: -2.44098007E10
+      map7.put(0.0, 2.23870976E9);//    23  |  answer_correct: false  |  ti=
+me_needed: 2.23870976E9
+      map7.put(1.0, -3145728.0);//    24  |  answer_correct: true   |  time=
+_needed: -3145728.0
+      map7.put(1.0, -1.29079706E9);//    25  |  answer_correct: true   |  t=
+ime_needed: -1.29079706E9
+      map7.put(1.0, -2.57005978E9);//    26  |  answer_correct: true   |  t=
+ime_needed: -2.57005978E9
+      map7.put(1.0, -8.430551E9);//    27  |  answer_correct: true   |  tim=
+e_needed: -8.430551E9
+      map7.put(1.0, -9.9027517E9);//    28  |  answer_correct: true   |  ti=
+me_needed: -9.9027517E9
+      map7.put(1.0, -1.08705874E10);//    29  |  answer_correct: true   |  =
+time_needed: -1.08705874E10
+      map7.put(1.0, -1.18614917E10);//    30  |  answer_correct: true   |  =
+time_needed: -1.18614917E10
+      map7.put(1.0, -1.29006305E10);//    31  |  answer_correct: true   |  =
+time_needed: -1.29006305E10
+      map7.put(1.0, -1.39387208E10);//    32  |  answer_correct: true   |  =
+time_needed: -1.39387208E10
+      map7.put(1.0, -1.48908278E10);//    33  |  answer_correct: true   |  =
+time_needed: -1.48908278E10
+      map7.put(1.0, -1.58188175E10);//    34  |  answer_correct: true   |  =
+time_needed: -1.58188175E10
+      map7.put(0.0, 1.6032727E9);//    35  |  answer_correct: false  |  tim=
+e_needed: 1.6032727E9
+      map7.put(1.0, -3145728.0);//    36  |  answer_correct: true   |  time=
+_needed: -3145728.0
+      map7.put(1.0, -3.80213658E9);//    37  |  answer_correct: true   |  t=
+ime_needed: -3.80213658E9
+      map7.put(1.0, -7.2928461E9);//    38  |  answer_correct: true   |  ti=
+me_needed: -7.2928461E9
+      map7.put(1.0, -1.06210263E10);//    39  |  answer_correct: true   |  =
+time_needed: -1.06210263E10
+      map7.put(1.0, -1.16245135E10);//    40  |  answer_correct: true   |  =
+time_needed: -1.16245135E10
+    time needed for state: 85.484375
+STATE END
+
+float c1_c2_ratio =3D 0.89853317;
+
+float iat_result =3D  0.11292493;
+
+NEW STATE: iat7.5
+    time needed for state: 12.305664
+STATE END
+QUESTIONAIRE START:=20
+  int answer_0 =3D 1;   //Wie alt sind Sie etwa? : j=C3=BCnger als 20
+  int answer_1 =3D 2;   //Sie sind:  : M=C3=A4nnlich
+  int answer_2 =3D 2;   //Haben Sie schonmal einen impliziten Assoziationst=
+est gemacht? : Nein
+  int answer_3 =3D 2;   //Kannten Sie den Werbefilm schon? : Nein.
+  int answer_4 =3D 2;   //Essen Sie gerne Fleisch? : gerne
+  int answer_5 =3D 2;   //Haben Sie schon einmal Fleisch im Internet bestel=
+lt? : Nein.
+  int answer_6 =3D 3;   //Ziehen Sie es in Erw=C3=A4gung Fleisch bei=20
+Luma Delikatessen zu bestellen? : wei=C3=9F nicht
+  int answer_7 =3D 3;   //Wie hoch, glauben Sie, ist der Aufwand=20
+bei Luma Delikatessen etwas zu bestellen. : wei=C3=9F nicht
+  int answer_8 =3D 3;   //Wie, glauben Sie, schmeckt Fleisch von=20
+Luma Delikatessen im Vergleich zu Frischfleisch?
+Fleisch von Luma Delikatessen schmeckt ... : gleich gut wie Frischfleisch.
+
+QUESTIONAIRE END
+
+NEW STATE: qu
+
+TEST END=
+
+------------=_1509383845-8364-1834
+Content-Type: text/html; charset="UTF-8"
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+
+<html><body>
+<p>NEW TEST</p>
+<pre>TEST_ID: 0
+DATE: Mon Oct 30 18:09:23 GMT+01:00 2017</pre>
+<p>int playtimes =3D 1</p>
+<p>NEW STATE: showClip</p>
+<pre>time needed for state: 9.765625E-4</pre>
+<p>STATE END</p>
+<p>NEW STATE: iat0.5</p>
+<pre>time needed for state: 30.892578</pre>
+<p>STATE END</p>
+<p>NEW STATE: iat1.0 ArrayMap&lt;Float, Float&gt; map1.0=3D new ArrayMap(40=
+);      map1.put(1.0, -8.5501495E12);//    0   |  answer_correct: true   | =
+ time_needed: -8.5501495E12</p>
+<pre>  map1.put(1.0, -8.5529733E12);//    1   |  answer_correct: true   |  =
+time_needed: -8.5529733E12
+  map1.put(1.0, -8.5549111E12);//    2   |  answer_correct: true   |  time_=
+needed: -8.5549111E12
+  map1.put(1.0, -8.557456E12);//    3   |  answer_correct: true   |  time_n=
+eeded: -8.557456E12
+  map1.put(1.0, -8.5588092E12);//    4   |  answer_correct: true   |  time_=
+needed: -8.5588092E12
+  map1.put(1.0, -8.5601498E12);//    5   |  answer_correct: true   |  time_=
+needed: -8.5601498E12
+  map1.put(1.0, -8.5632478E12);//    6   |  answer_correct: true   |  time_=
+needed: -8.5632478E12
+  map1.put(1.0, -8.5644904E12);//    7   |  answer_correct: true   |  time_=
+needed: -8.5644904E12
+  map1.put(1.0, -8.5659426E12);//    8   |  answer_correct: true   |  time_=
+needed: -8.5659426E12
+  map1.put(1.0, -8.5671511E12);//    9  |  answer_correct: true   |  time_n=
+eeded: -8.5671511E12
+  map1.put(1.0, -8.5697946E12);//    10  |  answer_correct: true   |  time_=
+needed: -8.5697946E12
+  map1.put(1.0, -8.5709674E12);//    11  |  answer_correct: true   |  time_=
+needed: -8.5709674E12
+  map1.put(1.0, -8.5733183E12);//    12  |  answer_correct: true   |  time_=
+needed: -8.5733183E12
+  map1.put(1.0, -8.5750705E12);//    13  |  answer_correct: true   |  time_=
+needed: -8.5750705E12
+  map1.put(1.0, -8.5758454E12);//    14  |  answer_correct: true   |  time_=
+needed: -8.5758454E12
+  map1.put(1.0, -8.5772526E12);//    15  |  answer_correct: true   |  time_=
+needed: -8.5772526E12
+  map1.put(1.0, -8.5796748E12);//    16  |  answer_correct: true   |  time_=
+needed: -8.5796748E12
+  map1.put(1.0, -8.5808371E12);//    17  |  answer_correct: true   |  time_=
+needed: -8.5808371E12
+  map1.put(1.0, -8.5821531E12);//    18  |  answer_correct: true   |  time_=
+needed: -8.5821531E12
+  map1.put(1.0, -8.5836138E12);//    19  |  answer_correct: true   |  time_=
+needed: -8.5836138E12
+  map1.put(1.0, -8.5846713E12);//    20  |  answer_correct: true   |  time_=
+needed: -8.5846713E12
+time needed for state: 36.591797</pre>
+<p>STATE END</p>
+<p>NEW STATE: iat1.5</p>
+<pre>time needed for state: 6.5029297</pre>
+<p>STATE END</p>
+<p>NEW STATE: iat2.0 ArrayMap&lt;Float, Float&gt; map2.0=3D new ArrayMap(40=
+);      map2.put(1.0, -8.593278E12);//    0   |  answer_correct: true   |  =
+time_needed: -8.593278E12</p>
+<pre>  map2.put(1.0, -8.5960211E12);//    1   |  answer_correct: true   |  =
+time_needed: -8.5960211E12
+  map2.put(1.0, -8.597897E12);//    2   |  answer_correct: true   |  time_n=
+eeded: -8.597897E12
+  map2.put(1.0, -8.5990074E12);//    3   |  answer_correct: true   |  time_=
+needed: -8.5990074E12
+  map2.put(1.0, -8.599906E12);//    4   |  answer_correct: true   |  time_n=
+eeded: -8.599906E12
+  map2.put(1.0, -8.6009944E12);//    5   |  answer_correct: true   |  time_=
+needed: -8.6009944E12
+  map2.put(1.0, -8.6021526E12);//    6   |  answer_correct: true   |  time_=
+needed: -8.6021526E12
+  map2.put(1.0, -8.6035058E12);//    7   |  answer_correct: true   |  time_=
+needed: -8.6035058E12
+  map2.put(1.0, -8.6047006E12);//    8   |  answer_correct: true   |  time_=
+needed: -8.6047006E12
+  map2.put(1.0, -8.6061723E12);//    9  |  answer_correct: true   |  time_n=
+eeded: -8.6061723E12
+  map2.put(1.0, -8.6073263E12);//    10  |  answer_correct: true   |  time_=
+needed: -8.6073263E12
+  map2.put(1.0, -8.6085646E12);//    11  |  answer_correct: true   |  time_=
+needed: -8.6085646E12
+  map2.put(1.0, -8.6094696E12);//    12  |  answer_correct: true   |  time_=
+needed: -8.6094696E12
+  map2.put(0.0, 2.32469299E9);//    13  |  answer_correct: false  |  time_n=
+eeded: 2.32469299E9
+  map2.put(1.0, -2097152.0);//    14  |  answer_correct: true   |  time_nee=
+ded: -2097152.0
+  map2.put(1.0, -4.4926239E9);//    15  |  answer_correct: true   |  time_n=
+eeded: -4.4926239E9
+  map2.put(1.0, -5.5490642E9);//    16  |  answer_correct: true   |  time_n=
+eeded: -5.5490642E9
+  map2.put(1.0, -6.4833454E9);//    17  |  answer_correct: true   |  time_n=
+eeded: -6.4833454E9
+  map2.put(1.0, -7.3447506E9);//    18  |  answer_correct: true   |  time_n=
+eeded: -7.3447506E9
+  map2.put(1.0, -8.1552998E9);//    19  |  answer_correct: true   |  time_n=
+eeded: -8.1552998E9
+  map2.put(1.0, -8.9936364E9);//    20  |  answer_correct: true   |  time_n=
+eeded: -8.9936364E9
+time needed for state: 29.336914</pre>
+<p>STATE END</p>
+<p>NEW STATE: iat2.5</p>
+<pre>time needed for state: 6.790039</pre>
+<p>STATE END</p>
+<p>NEW STATE: iat3.0 ArrayMap&lt;Float, Float&gt; map3.0=3D new ArrayMap(40=
+);      map3.put(1.0, -1.66650184E10);//    0   |  answer_correct: true   |=
+  time_needed: -1.66650184E10</p>
+<pre>  map3.put(1.0, -2.09694228E10);//    1   |  answer_correct: true   | =
+ time_needed: -2.09694228E10
+  map3.put(0.0, 4.6368031E9);//    2   |  answer_correct: false  |  time_ne=
+eded: 4.6368031E9
+  map3.put(1.0, -2097152.0);//    3   |  answer_correct: true   |  time_nee=
+ded: -2097152.0
+  map3.put(1.0, -5.4908682E9);//    4   |  answer_correct: true   |  time_n=
+eeded: -5.4908682E9
+  map3.put(1.0, -6.7617423E9);//    5   |  answer_correct: true   |  time_n=
+eeded: -6.7617423E9
+  map3.put(1.0, -7.9350989E9);//    6   |  answer_correct: true   |  time_n=
+eeded: -7.9350989E9
+  map3.put(1.0, -9.0098893E9);//    7   |  answer_correct: true   |  time_n=
+eeded: -9.0098893E9
+  map3.put(1.0, -1.00322509E10);//    8   |  answer_correct: true   |  time=
+_needed: -1.00322509E10
+  map3.put(1.0, -1.09570949E10);//    9  |  answer_correct: true   |  time_=
+needed: -1.09570949E10
+  map3.put(1.0, -1.18709289E10);//    10  |  answer_correct: true   |  time=
+_needed: -1.18709289E10
+  map3.put(1.0, -1.28455803E10);//    11  |  answer_correct: true   |  time=
+_needed: -1.28455803E10
+  map3.put(1.0, -1.37877258E10);//    12  |  answer_correct: true   |  time=
+_needed: -1.37877258E10
+  map3.put(1.0, -1.49862482E10);//    13  |  answer_correct: true   |  time=
+_needed: -1.49862482E10
+  map3.put(1.0, -1.63588342E10);//    14  |  answer_correct: true   |  time=
+_needed: -1.63588342E10
+  map3.put(1.0, -1.72128993E10);//    15  |  answer_correct: true   |  time=
+_needed: -1.72128993E10
+  map3.put(0.0, 4.3133174E9);//    16  |  answer_correct: false  |  time_ne=
+eded: 4.3133174E9
+  map3.put(1.0, -2097152.0);//    17  |  answer_correct: true   |  time_nee=
+ded: -2097152.0
+  map3.put(1.0, -2.97009152E9);//    18  |  answer_correct: true   |  time_=
+needed: -2.97009152E9
+  map3.put(1.0, -4.6661632E9);//    19  |  answer_correct: true   |  time_n=
+eeded: -4.6661632E9
+  map3.put(1.0, -5.6617861E9);//    20  |  answer_correct: true   |  time_n=
+eeded: -5.6617861E9
+time needed for state: 40.59961</pre>
+<p>STATE END</p>
+<p>NEW STATE: iat3.5</p>
+<pre>time needed for state: 1.8085938</pre>
+<p>STATE END</p>
+<p>NEW STATE: iat4.0 ArrayMap&lt;Float, Float&gt; map4.0=3D new ArrayMap(40=
+);      map4.put(0.0, 7.4317824E9);//    0   |  answer_correct: false  |  t=
+ime_needed: 7.4317824E9</p>
+<pre>  map4.put(1.0, -2097152.0);//    1   |  answer_correct: true   |  tim=
+e_needed: -2097152.0
+  map4.put(1.0, -1.10886912E9);//    2   |  answer_correct: true   |  time_=
+needed: -1.10886912E9
+  map4.put(1.0, -2.26020557E9);//    3   |  answer_correct: true   |  time_=
+needed: -2.26020557E9
+  map4.put(1.0, -3.2678871E9);//    4   |  answer_correct: true   |  time_n=
+eeded: -3.2678871E9
+  map4.put(1.0, -4.3447747E9);//    5   |  answer_correct: true   |  time_n=
+eeded: -4.3447747E9
+  map4.put(1.0, -7.6394004E9);//    6   |  answer_correct: true   |  time_n=
+eeded: -7.6394004E9
+  map4.put(1.0, -1.32639621E10);//    7   |  answer_correct: true   |  time=
+_needed: -1.32639621E10
+  map4.put(1.0, -1.42648279E10);//    8   |  answer_correct: true   |  time=
+_needed: -1.42648279E10
+  map4.put(1.0, -1.51220388E10);//    9  |  answer_correct: true   |  time_=
+needed: -1.51220388E10
+  map4.put(1.0, -1.65245092E10);//    10  |  answer_correct: true   |  time=
+_needed: -1.65245092E10
+  map4.put(1.0, -1.76134554E10);//    11  |  answer_correct: true   |  time=
+_needed: -1.76134554E10
+  map4.put(1.0, -1.88235121E10);//    12  |  answer_correct: true   |  time=
+_needed: -1.88235121E10
+  map4.put(1.0, -1.99460127E10);//    13  |  answer_correct: true   |  time=
+_needed: -1.99460127E10
+  map4.put(1.0, -2.18350223E10);//    14  |  answer_correct: true   |  time=
+_needed: -2.18350223E10
+  map4.put(1.0, -2.58762342E10);//    15  |  answer_correct: true   |  time=
+_needed: -2.58762342E10
+  map4.put(1.0, -2.77274952E10);//    16  |  answer_correct: true   |  time=
+_needed: -2.77274952E10
+  map4.put(1.0, -2.94351012E10);//    17  |  answer_correct: true   |  time=
+_needed: -2.94351012E10
+  map4.put(1.0, -3.04606085E10);//    18  |  answer_correct: true   |  time=
+_needed: -3.04606085E10
+  map4.put(1.0, -3.1295275E10);//    19  |  answer_correct: true   |  time_=
+needed: -3.1295275E10
+  map4.put(1.0, -3.24046684E10);//    20  |  answer_correct: true   |  time=
+_needed: -3.24046684E10
+  map4.put(1.0, -3.34569144E10);//    21  |  answer_correct: true   |  time=
+_needed: -3.34569144E10
+  map4.put(1.0, -3.4895036E10);//    22  |  answer_correct: true   |  time_=
+needed: -3.4895036E10
+  map4.put(1.0, -3.607416E10);//    23  |  answer_correct: true   |  time_n=
+eeded: -3.607416E10
+  map4.put(1.0, -3.9369834E10);//    24  |  answer_correct: true   |  time_=
+needed: -3.9369834E10
+  map4.put(1.0, -4.0640709E10);//    25  |  answer_correct: true   |  time_=
+needed: -4.0640709E10
+  map4.put(1.0, -4.1732801E10);//    26  |  answer_correct: true   |  time_=
+needed: -4.1732801E10
+  map4.put(1.0, -4.4166545E10);//    27  |  answer_correct: true   |  time_=
+needed: -4.4166545E10
+  map4.put(1.0, -4.6867677E10);//    28  |  answer_correct: true   |  time_=
+needed: -4.6867677E10
+  map4.put(1.0, -4.7880077E10);//    29  |  answer_correct: true   |  time_=
+needed: -4.7880077E10
+  map4.put(1.0, -4.8801251E10);//    30  |  answer_correct: true   |  time_=
+needed: -4.8801251E10
+  map4.put(1.0, -4.9949442E10);//    31  |  answer_correct: true   |  time_=
+needed: -4.9949442E10
+  map4.put(1.0, -5.0905219E10);//    32  |  answer_correct: true   |  time_=
+needed: -5.0905219E10
+  map4.put(1.0, -5.2026147E10);//    33  |  answer_correct: true   |  time_=
+needed: -5.2026147E10
+  map4.put(1.0, -5.5173448E10);//    34  |  answer_correct: true   |  time_=
+needed: -5.5173448E10
+  map4.put(0.0, 2.74726912E9);//    35  |  answer_correct: false  |  time_n=
+eeded: 2.74726912E9
+  map4.put(1.0, -1572864.0);//    36  |  answer_correct: true   |  time_nee=
+ded: -1572864.0
+  map4.put(1.0, -5.7524879E9);//    37  |  answer_correct: true   |  time_n=
+eeded: -5.7524879E9
+  map4.put(0.0, 1.52200806E9);//    38  |  answer_correct: false  |  time_n=
+eeded: 1.52200806E9
+  map4.put(1.0, -2097152.0);//    39  |  answer_correct: true   |  time_nee=
+ded: -2097152.0
+  map4.put(1.0, -1.27611699E9);//    40  |  answer_correct: true   |  time_=
+needed: -1.27611699E9
+time needed for state: 76.81055</pre>
+<p>STATE END</p>
+<p>NEW STATE: iat4.5</p>
+<pre>time needed for state: 1.5800781</pre>
+<p>STATE END</p>
+<p>NEW STATE: iat5.0 ArrayMap&lt;Float, Float&gt; map5.0=3D new ArrayMap(40=
+);      map5.put(0.0, 6.6175631E9);//    0   |  answer_correct: false  |  t=
+ime_needed: 6.6175631E9</p>
+<pre>  map5.put(1.0, -2621440.0);//    1   |  answer_correct: true   |  tim=
+e_needed: -2621440.0
+  map5.put(1.0, -2.0274217E9);//    2   |  answer_correct: true   |  time_n=
+eeded: -2.0274217E9
+  map5.put(1.0, -3.12213504E9);//    3   |  answer_correct: true   |  time_=
+needed: -3.12213504E9
+  map5.put(1.0, -4.13663232E9);//    4   |  answer_correct: true   |  time_=
+needed: -4.13663232E9
+  map5.put(1.0, -5.0903122E9);//    5   |  answer_correct: true   |  time_n=
+eeded: -5.0903122E9
+  map5.put(0.0, 2.56796262E9);//    6   |  answer_correct: false  |  time_n=
+eeded: 2.56796262E9
+  map5.put(1.0, -2097152.0);//    7   |  answer_correct: true   |  time_nee=
+ded: -2097152.0
+  map5.put(1.0, -6.3753421E8);//    8   |  answer_correct: true   |  time_n=
+eeded: -6.3753421E8
+  map5.put(1.0, -1.39041178E9);//    9  |  answer_correct: true   |  time_n=
+eeded: -1.39041178E9
+  map5.put(1.0, -3.7224448E9);//    10  |  answer_correct: true   |  time_n=
+eeded: -3.7224448E9
+  map5.put(0.0, 1.7521705E9);//    11  |  answer_correct: false  |  time_ne=
+eded: 1.7521705E9
+  map5.put(1.0, -1572864.0);//    12  |  answer_correct: true   |  time_nee=
+ded: -1572864.0
+  map5.put(1.0, -4.3070259E9);//    13  |  answer_correct: true   |  time_n=
+eeded: -4.3070259E9
+  map5.put(1.0, -5.6140759E9);//    14  |  answer_correct: true   |  time_n=
+eeded: -5.6140759E9
+  map5.put(1.0, -7.2283587E9);//    15  |  answer_correct: true   |  time_n=
+eeded: -7.2283587E9
+  map5.put(1.0, -8.257536E9);//    16  |  answer_correct: true   |  time_ne=
+eded: -8.257536E9
+  map5.put(1.0, -9.4812242E9);//    17  |  answer_correct: true   |  time_n=
+eeded: -9.4812242E9
+  map5.put(0.0, 1.51728947E9);//    18  |  answer_correct: false  |  time_n=
+eeded: 1.51728947E9
+  map5.put(1.0, -2621440.0);//    19  |  answer_correct: true   |  time_nee=
+ded: -2621440.0
+  map5.put(1.0, -2.49823232E9);//    20  |  answer_correct: true   |  time_=
+needed: -2.49823232E9
+  map5.put(1.0, -5.6533975E9);//    21  |  answer_correct: true   |  time_n=
+eeded: -5.6533975E9
+  map5.put(1.0, -7.4538025E9);//    22  |  answer_correct: true   |  time_n=
+eeded: -7.4538025E9
+  map5.put(1.0, -8.9281004E9);//    23  |  answer_correct: true   |  time_n=
+eeded: -8.9281004E9
+  map5.put(1.0, -1.07363697E10);//    24  |  answer_correct: true   |  time=
+_needed: -1.07363697E10
+  map5.put(1.0, -1.20785469E10);//    25  |  answer_correct: true   |  time=
+_needed: -1.20785469E10
+  map5.put(1.0, -1.31470459E10);//    26  |  answer_correct: true   |  time=
+_needed: -1.31470459E10
+  map5.put(1.0, -1.44032399E10);//    27  |  answer_correct: true   |  time=
+_needed: -1.44032399E10
+  map5.put(1.0, -1.55776451E10);//    28  |  answer_correct: true   |  time=
+_needed: -1.55776451E10
+  map5.put(1.0, -1.77345659E10);//    29  |  answer_correct: true   |  time=
+_needed: -1.77345659E10
+  map5.put(1.0, -1.90620631E10);//    30  |  answer_correct: true   |  time=
+_needed: -1.90620631E10
+  map5.put(1.0, -1.99145554E10);//    31  |  answer_correct: true   |  time=
+_needed: -1.99145554E10
+  map5.put(1.0, -2.11004948E10);//    32  |  answer_correct: true   |  time=
+_needed: -2.11004948E10
+  map5.put(1.0, -2.33129902E10);//    33  |  answer_correct: true   |  time=
+_needed: -2.33129902E10
+  map5.put(1.0, -2.48680284E10);//    34  |  answer_correct: true   |  time=
+_needed: -2.48680284E10
+  map5.put(1.0, -2.65499443E10);//    35  |  answer_correct: true   |  time=
+_needed: -2.65499443E10
+  map5.put(1.0, -2.73992909E10);//    36  |  answer_correct: true   |  time=
+_needed: -2.73992909E10
+  map5.put(1.0, -2.89438433E10);//    37  |  answer_correct: true   |  time=
+_needed: -2.89438433E10
+  map5.put(1.0, -3.03111864E10);//    38  |  answer_correct: true   |  time=
+_needed: -3.03111864E10
+  map5.put(1.0, -3.15013202E10);//    39  |  answer_correct: true   |  time=
+_needed: -3.15013202E10
+  map5.put(1.0, -3.25488476E10);//    40  |  answer_correct: true   |  time=
+_needed: -3.25488476E10
+time needed for state: 67.46777</pre>
+<p>STATE END</p>
+<p>NEW STATE: iat5.5</p>
+<pre>time needed for state: 1.3320312</pre>
+<p>STATE END</p>
+<p>NEW STATE: iat6.0 ArrayMap&lt;Float, Float&gt; map6.0=3D new ArrayMap(40=
+);      map6.put(1.0, -3.4633417E10);//    0   |  answer_correct: true   | =
+ time_needed: -3.4633417E10</p>
+<pre>  map6.put(1.0, -4.220833E10);//    1   |  answer_correct: true   |  t=
+ime_needed: -4.220833E10
+  map6.put(1.0, -4.6156218E10);//    2   |  answer_correct: true   |  time_=
+needed: -4.6156218E10
+  map6.put(1.0, -5.2620689E10);//    3   |  answer_correct: true   |  time_=
+needed: -5.2620689E10
+  map6.put(1.0, -5.3660877E10);//    4   |  answer_correct: true   |  time_=
+needed: -5.3660877E10
+  map6.put(1.0, -5.9082015E10);//    5   |  answer_correct: true   |  time_=
+needed: -5.9082015E10
+  map6.put(1.0, -6.0709405E10);//    6   |  answer_correct: true   |  time_=
+needed: -6.0709405E10
+  map6.put(1.0, -6.1680386E10);//    7   |  answer_correct: true   |  time_=
+needed: -6.1680386E10
+  map6.put(1.0, -6.5210941E10);//    8   |  answer_correct: true   |  time_=
+needed: -6.5210941E10
+  map6.put(1.0, -6.6653782E10);//    9  |  answer_correct: true   |  time_n=
+eeded: -6.6653782E10
+  map6.put(1.0, -6.773801E10);//    10  |  answer_correct: true   |  time_n=
+eeded: -6.773801E10
+  map6.put(1.0, -6.9471306E10);//    11  |  answer_correct: true   |  time_=
+needed: -6.9471306E10
+  map6.put(1.0, -7.0925681E10);//    12  |  answer_correct: true   |  time_=
+needed: -7.0925681E10
+  map6.put(1.0, -7.2150417E10);//    13  |  answer_correct: true   |  time_=
+needed: -7.2150417E10
+  map6.put(1.0, -7.39676E10);//    14  |  answer_correct: true   |  time_ne=
+eded: -7.39676E10
+  map6.put(1.0, -7.5500618E10);//    15  |  answer_correct: true   |  time_=
+needed: -7.5500618E10
+  map6.put(1.0, -7.6551291E10);//    16  |  answer_correct: true   |  time_=
+needed: -7.6551291E10
+  map6.put(1.0, -7.7523321E10);//    17  |  answer_correct: true   |  time_=
+needed: -7.7523321E10
+  map6.put(1.0, -7.8360084E10);//    18  |  answer_correct: true   |  time_=
+needed: -7.8360084E10
+  map6.put(1.0, -7.9334212E10);//    19  |  answer_correct: true   |  time_=
+needed: -7.9334212E10
+  map6.put(1.0, -8.024857E10);//    20  |  answer_correct: true   |  time_n=
+eeded: -8.024857E10
+time needed for state: 46.479492</pre>
+<p>STATE END</p>
+<p>NEW STATE: iat6.5</p>
+<pre>time needed for state: 1.0615234</pre>
+<p>STATE END</p>
+<p>NEW STATE: iat7.0 ArrayMap&lt;Float, Float&gt; map7.0=3D new ArrayMap(40=
+);      map7.put(1.0, -8.2206261E10);//    0   |  answer_correct: true   | =
+ time_needed: -8.2206261E10</p>
+<pre>  map7.put(1.0, -8.6546317E10);//    1   |  answer_correct: true   |  =
+time_needed: -8.6546317E10
+  map7.put(1.0, -9.0769981E10);//    2   |  answer_correct: true   |  time_=
+needed: -9.0769981E10
+  map7.put(1.0, -9.2774859E10);//    3   |  answer_correct: true   |  time_=
+needed: -9.2774859E10
+  map7.put(0.0, 3.56410982E9);//    4   |  answer_correct: false  |  time_n=
+eeded: 3.56410982E9
+  map7.put(1.0, -2097152.0);//    5   |  answer_correct: true   |  time_nee=
+ded: -2097152.0
+  map7.put(1.0, -5.4599352E9);//    6   |  answer_correct: true   |  time_n=
+eeded: -5.4599352E9
+  map7.put(1.0, -6.608126E9);//    7   |  answer_correct: true   |  time_ne=
+eded: -6.608126E9
+  map7.put(0.0, 2.02899456E9);//    8   |  answer_correct: false  |  time_n=
+eeded: 2.02899456E9
+  map7.put(1.0, -2097152.0);//    9  |  answer_correct: true   |  time_need=
+ed: -2097152.0
+  map7.put(1.0, -5.0038047E9);//    10  |  answer_correct: true   |  time_n=
+eeded: -5.0038047E9
+  map7.put(1.0, -6.6144174E9);//    11  |  answer_correct: true   |  time_n=
+eeded: -6.6144174E9
+  map7.put(1.0, -9.3344236E9);//    12  |  answer_correct: true   |  time_n=
+eeded: -9.3344236E9
+  map7.put(1.0, -1.2506366E10);//    13  |  answer_correct: true   |  time_=
+needed: -1.2506366E10
+  map7.put(1.0, -1.44472801E10);//    14  |  answer_correct: true   |  time=
+_needed: -1.44472801E10
+  map7.put(1.0, -1.54193101E10);//    15  |  answer_correct: true   |  time=
+_needed: -1.54193101E10
+  map7.put(1.0, -1.68936079E10);//    16  |  answer_correct: true   |  time=
+_needed: -1.68936079E10
+  map7.put(1.0, -1.81990851E10);//    17  |  answer_correct: true   |  time=
+_needed: -1.81990851E10
+  map7.put(1.0, -1.96912087E10);//    18  |  answer_correct: true   |  time=
+_needed: -1.96912087E10
+  map7.put(1.0, -2.08446423E10);//    19  |  answer_correct: true   |  time=
+_needed: -2.08446423E10
+  map7.put(1.0, -2.18691011E10);//    20  |  answer_correct: true   |  time=
+_needed: -2.18691011E10
+  map7.put(1.0, -2.27079619E10);//    21  |  answer_correct: true   |  time=
+_needed: -2.27079619E10
+  map7.put(1.0, -2.44098007E10);//    22  |  answer_correct: true   |  time=
+_needed: -2.44098007E10
+  map7.put(0.0, 2.23870976E9);//    23  |  answer_correct: false  |  time_n=
+eeded: 2.23870976E9
+  map7.put(1.0, -3145728.0);//    24  |  answer_correct: true   |  time_nee=
+ded: -3145728.0
+  map7.put(1.0, -1.29079706E9);//    25  |  answer_correct: true   |  time_=
+needed: -1.29079706E9
+  map7.put(1.0, -2.57005978E9);//    26  |  answer_correct: true   |  time_=
+needed: -2.57005978E9
+  map7.put(1.0, -8.430551E9);//    27  |  answer_correct: true   |  time_ne=
+eded: -8.430551E9
+  map7.put(1.0, -9.9027517E9);//    28  |  answer_correct: true   |  time_n=
+eeded: -9.9027517E9
+  map7.put(1.0, -1.08705874E10);//    29  |  answer_correct: true   |  time=
+_needed: -1.08705874E10
+  map7.put(1.0, -1.18614917E10);//    30  |  answer_correct: true   |  time=
+_needed: -1.18614917E10
+  map7.put(1.0, -1.29006305E10);//    31  |  answer_correct: true   |  time=
+_needed: -1.29006305E10
+  map7.put(1.0, -1.39387208E10);//    32  |  answer_correct: true   |  time=
+_needed: -1.39387208E10
+  map7.put(1.0, -1.48908278E10);//    33  |  answer_correct: true   |  time=
+_needed: -1.48908278E10
+  map7.put(1.0, -1.58188175E10);//    34  |  answer_correct: true   |  time=
+_needed: -1.58188175E10
+  map7.put(0.0, 1.6032727E9);//    35  |  answer_correct: false  |  time_ne=
+eded: 1.6032727E9
+  map7.put(1.0, -3145728.0);//    36  |  answer_correct: true   |  time_nee=
+ded: -3145728.0
+  map7.put(1.0, -3.80213658E9);//    37  |  answer_correct: true   |  time_=
+needed: -3.80213658E9
+  map7.put(1.0, -7.2928461E9);//    38  |  answer_correct: true   |  time_n=
+eeded: -7.2928461E9
+  map7.put(1.0, -1.06210263E10);//    39  |  answer_correct: true   |  time=
+_needed: -1.06210263E10
+  map7.put(1.0, -1.16245135E10);//    40  |  answer_correct: true   |  time=
+_needed: -1.16245135E10
+time needed for state: 85.484375</pre>
+<p>STATE END</p>
+<p>float c1_c2_ratio =3D 0.89853317;</p>
+<p>float iat_result =3D  0.11292493;</p>
+<p>NEW STATE: iat7.5</p>
+<pre>time needed for state: 12.305664</pre>
+<p>STATE END QUESTIONAIRE START:</p>
+<pre>int answer_0 =3D 1;   //Wie alt sind Sie etwa? : j=C3=BCnger als 20
+int answer_1 =3D 2;   //Sie sind:  : M=C3=A4nnlich
+int answer_2 =3D 2;   //Haben Sie schonmal einen impliziten Assoziationstes=
+t gemacht? : Nein
+int answer_3 =3D 2;   //Kannten Sie den Werbefilm schon? : Nein.
+int answer_4 =3D 2;   //Essen Sie gerne Fleisch? : gerne
+int answer_5 =3D 2;   //Haben Sie schon einmal Fleisch im Internet bestellt=
+? : Nein.
+int answer_6 =3D 3;   //Ziehen Sie es in Erw=C3=A4gung Fleisch bei</pre>
+<p>Luma Delikatessen zu bestellen? : wei=C3=9F nicht</p>
+<pre>int answer_7 =3D 3;   //Wie hoch, glauben Sie, ist der Aufwand</pre>
+<p>bei Luma Delikatessen etwas zu bestellen. : wei=C3=9F nicht</p>
+<pre>int answer_8 =3D 3;   //Wie, glauben Sie, schmeckt Fleisch von</pre>
+<p>Luma Delikatessen im Vergleich zu Frischfleisch? Fleisch von Luma Delika=
+tessen schmeckt &hellip; : gleich gut wie Frischfleisch.</p>
+<p>QUESTIONAIRE END</p>
+<p>NEW STATE: qu</p>
+<p>TEST END</p>
+
+<img src=3D"https://u6186184.ct.sendgrid.net/wf/open?upn=3D84H62ZYiVr8LHXL1=
+myJMCTO3WnzmTMYpO5617-2B3jtaeFIfO2F-2BSXLVcs0afsvSyQbg1zjk1FILgw156pfo1G7mu=
+BnjfOyipiNwWkHypLIbgzedQG0Yq2ggzVpYjujSEaXByYFbQB-2BhsWspv5i75znmUxtxqdeQIy=
+XrhszsAdzEdL01rqpXgKmCeGd4-2FBFGd9sy12qZjbJFbRvp-2FSUOZ6eRutT-2BHQ7pELJyeqS=
+6uil0c-3D" alt=3D"" width=3D"1" height=3D"1" border=3D"0" style=3D"height:1=
+px !important;width:1px !important;border-width:0 !important;margin-top:0 !=
+important;margin-bottom:0 !important;margin-right:0 !important;margin-left:=
+0 !important;padding-top:0 !important;padding-bottom:0 !important;padding-r=
+ight:0 !important;padding-left:0 !important;"/>
+</body></html>
+
+------------=_1509383845-8364-1834--

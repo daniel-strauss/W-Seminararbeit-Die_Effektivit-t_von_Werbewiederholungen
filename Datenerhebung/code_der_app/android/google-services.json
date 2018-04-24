@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "507629052922",
+    "firebase_url": "https://selfmadeiatapp2.firebaseio.com",
+    "project_id": "selfmadeiatapp2",
+    "storage_bucket": "selfmadeiatapp2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:507629052922:android:a29c971dfc44c526",
+        "android_client_info": {
+          "package_name": "com.dani_w_seminar.game"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "507629052922-ikod5am4t0tsn1jv7vckhcghpcj6fodc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dani_w_seminar.game",
+            "certificate_hash": "3e28195f7e3c71a1b7f5512bd120b0182da3eeeb"
+          }
+        },
+        {
+          "client_id": "507629052922-rf3brfjkfnmhqdn5vqsc426qkfol1bvk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA90vCSSSTAxaNep2iFeEFH42sItd3Csi0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "507629052922-rf3brfjkfnmhqdn5vqsc426qkfol1bvk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
